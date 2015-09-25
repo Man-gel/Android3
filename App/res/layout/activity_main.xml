@@ -9,8 +9,70 @@
     tools:context="com.example.convertidor.MainActivity" >
 
     <TextView
+        android:id="@+id/tv_infodistancia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/km_a_millas" />
+    
+    <TextView
+        android:id="@+id/tv_infogrados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_grados"
+        android:layout_alignLeft="@+id/et_km"
+        android:layout_marginBottom="22dp"
+        android:text="@string/gradosc_a_gradosf" />
+
+    <EditText
+        android:id="@+id/et_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_infodistancia"
+        android:layout_alignRight="@+id/tv_infodistancia"
+        android:layout_below="@+id/tv_infodistancia"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/et_grados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_infogrados"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/et_km"
+        android:layout_marginBottom="113dp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_infodistancia"
+        android:layout_marginLeft="55dp"
+        android:layout_toRightOf="@+id/tv_infodistancia"
+        android:text="@string/boton" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_grados"
+        android:layout_alignLeft="@+id/button1"
+        android:text="@string/boton" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_km"
+        android:layout_marginTop="64dp"
+        android:layout_toLeftOf="@+id/button2"
+        android:text="@string/def_resultado"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

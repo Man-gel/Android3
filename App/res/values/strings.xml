@@ -2,7 +2,10 @@
 <resources>
 
     <string name="app_name">convertidor</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="km_a_millas">De km a millas</string>
     <string name="action_settings">Settings</string>
+    <string name="gradosc_a_gradosf">De °C a °F</string>
+    <string name="boton">Convertir</string>
+    <string name="def_resultado">0</string>
 
 </resources>
