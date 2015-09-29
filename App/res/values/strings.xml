@@ -8,5 +8,6 @@
     <string name="boton">Convertir</string>
     <string name="def_resGrados">0 °C</string>
     <string name="def_resDistancia">0 Millas</string>
+    <string name="btn_reset">Reset</string>
 
 </resources>

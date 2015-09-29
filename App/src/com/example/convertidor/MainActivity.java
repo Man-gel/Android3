@@ -13,6 +13,7 @@ public class MainActivity extends Activity {
 	private EditText gradosUser;
 	private TextView resMillas;
 	private TextView resFar;
+	private TextView km_to_M;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,8 @@ public class MainActivity extends Activity {
 		gradosUser = (EditText)findViewById(R.id.et_grados);
 		resMillas = (TextView)findViewById(R.id.tv_resDis);
 		resFar = (TextView)findViewById(R.id.tv_resGrados);
+		km_to_M = (TextView)findViewById(R.id.tv_infodistancia);
+		km_to_M.requestFocus();
 	}
 
 	@Override
@@ -58,5 +61,15 @@ public class MainActivity extends Activity {
 		String formatRes = res + " °F";
 		resFar.setText(formatRes);
 	}
+	
+	public void reset(View v)
+	{
+		resFar.setText("0 °F");
+		resMillas.setText("0 Millas");
+		kmUser.setText("");
+		gradosUser.setText("");
+		kmUser.requestFocus();
+	}
+	
 	
 }

@@ -13,15 +13,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/km_a_millas" />
-    
-    <TextView
-        android:id="@+id/tv_infogrados"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/et_grados"
-        android:layout_alignLeft="@+id/et_km"
-        android:layout_marginBottom="22dp"
-        android:text="@string/gradosc_a_gradosf" />
 
     <EditText
         android:id="@+id/et_km"
@@ -33,20 +24,6 @@
         android:layout_marginTop="14dp"
         android:ems="10"
         android:inputType="numberDecimal" />
-
-    <EditText
-        android:id="@+id/et_grados"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/tv_infogrados"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/et_km"
-        android:layout_marginBottom="113dp"
-        android:ems="10"
-        android:inputType="numberDecimal" >
-
-        <requestFocus />
-    </EditText>
 
     <Button
         android:id="@+id/btnCdis"
@@ -68,14 +45,23 @@
         android:text="@string/boton" />
 
     <TextView
-        android:id="@+id/tv_resDis"
+        android:id="@+id/tv_infogrados"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/et_km"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp"
-        android:text="@string/def_resDistancia"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_alignLeft="@+id/et_km"
+        android:layout_below="@+id/tv_resDis"
+        android:layout_marginTop="49dp"
+        android:text="@string/gradosc_a_gradosf" />
+
+    <EditText
+        android:id="@+id/et_grados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_infogrados"
+        android:layout_marginTop="19dp"
+        android:layout_toLeftOf="@+id/btnCdis"
+        android:ems="10"
+        android:inputType="numberDecimal" />
 
     <TextView
         android:id="@+id/tv_resGrados"
@@ -83,8 +69,28 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnCgrados"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="25dp"
         android:text="@string/def_resGrados"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tv_resDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_km"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="@string/def_resDistancia"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_resDis"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp"
+        android:onClick="reset"
+        android:text="@string/btn_reset" />
 
 </RelativeLayout>
