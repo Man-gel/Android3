@@ -6,6 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="gradosc_a_gradosf">De °C a °F</string>
     <string name="boton">Convertir</string>
-    <string name="def_resultado">0</string>
+    <string name="def_resGrados">0 °C</string>
+    <string name="def_resDistancia">0 Km</string>
 
 </resources>

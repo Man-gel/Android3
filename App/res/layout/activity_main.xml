@@ -70,9 +70,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_km"
-        android:layout_marginTop="64dp"
-        android:layout_toLeftOf="@+id/button2"
-        android:text="@string/def_resultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="@string/def_resDistancia"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="48dp"
+        android:text="@string/def_resGrados"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
