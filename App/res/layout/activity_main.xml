@@ -49,20 +49,22 @@
     </EditText>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnCdis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_infodistancia"
         android:layout_marginLeft="55dp"
         android:layout_toRightOf="@+id/tv_infodistancia"
+        android:onClick="kmToMillas"
         android:text="@string/boton" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnCgrados"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/et_grados"
-        android:layout_alignLeft="@+id/button1"
+        android:layout_alignLeft="@+id/btnCdis"
+        android:onClick="gradosCtoF"
         android:text="@string/boton" />
 
     <TextView
@@ -79,7 +81,7 @@
         android:id="@+id/tv_resGrados"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
+        android:layout_below="@+id/btnCgrados"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="47dp"
         android:text="@string/def_resGrados"

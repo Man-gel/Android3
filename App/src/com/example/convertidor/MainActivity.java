@@ -46,12 +46,15 @@ public class MainActivity extends Activity {
 	private void kmToMillas(View v)
 	{
 		double Km = Double.parseDouble(kmUser.getText().toString());
-		double res = 0.62 * Km;
+		double res = 1.8 * Km + 32;
+		resMillas.setText(Double.toString(res));
 	}
 	
 	private void gradosCtoF(View v)
 	{
-		
+		double gC = Double.parseDouble(gradosUser.getText().toString());
+		double res = 0.62 * gC;
+		resFar.setText(Double.toString(res));
 	}
 	
 }
