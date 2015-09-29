@@ -4,11 +4,15 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 	private EditText kmUser;
 	private EditText gradosUser;
+	private TextView resMillas;
+	private TextView resFar;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +20,8 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		kmUser = (EditText)findViewById(R.id.et_km);
 		gradosUser = (EditText)findViewById(R.id.et_grados);
+		resMillas = (TextView)findViewById(R.id.tv_resDis);
+		resFar = (TextView)findViewById(R.id.tv_resGrados);
 	}
 
 	@Override
@@ -37,13 +43,13 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	private void kmToMillas()
+	private void kmToMillas(View v)
 	{
-		
-		
+		double Km = Double.parseDouble(kmUser.getText().toString());
+		double res = 0.62 * Km;
 	}
 	
-	private void gradosCtoF()
+	private void gradosCtoF(View v)
 	{
 		
 	}
