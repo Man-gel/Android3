@@ -43,18 +43,20 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	private void kmToMillas(View v)
+	public void kmToMillas(View v)
 	{
 		double Km = Double.parseDouble(kmUser.getText().toString());
-		double res = 1.8 * Km + 32;
-		resMillas.setText(Double.toString(res));
+		double res = 0.62 * Km;
+		String formatRes = res + " Millas";
+		resMillas.setText(formatRes);
 	}
 	
-	private void gradosCtoF(View v)
+	public void gradosCtoF(View v)
 	{
 		double gC = Double.parseDouble(gradosUser.getText().toString());
-		double res = 0.62 * gC;
-		resFar.setText(Double.toString(res));
+		double res = 1.8 * gC + 32;		
+		String formatRes = res + " °F";
+		resFar.setText(formatRes);
 	}
 	
 }
